@@ -18,7 +18,7 @@ export default function NavbarPagess(){
        }
    return (
         <div>
-        <nav className="w-[4.5%] md:w-[7.5%] lg:w-[6.5%] xl:w-[6%] 2xl:w-[4.5%] md:flex flex-col hidden justify-between lg:ml-0 z-20 bg-slate-800 rounded-md text-gray-300 font-light text-dxs mx-auto py-4 h-screen fixed">
+        <nav className="w-[4.5%] md:w-[7.5%] lg:w-[6.5%] xl:w-[6%] 2xl:w-[4.5%] md:flex flex-col hidden justify-between lg:ml-2 z-20 bg-slate-800 rounded-md text-gray-300 font-light text-dxs mx-auto py-4 h-screen lg:mt-2 fixed">
            
             <ul>
                 {RoutersPagesData.map((eachRouter)=>(
@@ -31,7 +31,7 @@ export default function NavbarPagess(){
                 ))}
             </ul>
         </nav>
-        <Navbar id="m_nav_sc" className="md:hidden" onMenuOpenChange={setIsMenuOpen}>
+        <Navbar id="m_nav_sc" className="md:hidden fixed" onMenuOpenChange={setIsMenuOpen}>
                 <NavbarContent>
                     <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}

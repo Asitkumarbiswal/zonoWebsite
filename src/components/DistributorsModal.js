@@ -31,46 +31,44 @@ export default function DistributorsModal(){
           <ModalContent>
             {(onClose) => (
               <>
-                <ModalHeader className="flex flex-col gap-1">Increased Turnover</ModalHeader>
+                <ModalHeader className="flex flex-col gap-1 font-normal text-xl text-default-800">Increased Turnover</ModalHeader>
                 <ModalBody>
                 <Card className="w-full flex md:hidden flex-col p-0 shadow-none">
             <CardBody className="flex flex-col justify-center items-center w-full p-0 m-0">
               <div className="w-full h-full p-0 mx-auto"><Image alt="banner" className="w-full h-full max-w-full" src="/I am DT • What does Zono do /Group 377860@2x.png" /></div>
               </CardBody>
               <CardFooter className="flex flex-col justify-start items-start px-0">
-                <h2 className="text-2xl pb-4 text-left justify-start">Increased Turnover</h2>
-                <div className="flex flex-row gap-2">
-                  <div className="flex flex-row gap-1 pb-4 text-xs lg:pe-8">
+                <h2 className="text-2xl pb-4 text-left justify-start hidden">Increased Turnover</h2>
+                <div className="flex flex-col gap-2">
+                  <div className="flex flex-row gap-1 pb-4 text-xs text-default-600 lg:pe-8">
                     <div>
                       <RiCheckboxCircleFill color="#3AD394" size={30} /> 
                     </div>
                     ZoTok allows 24X7 order processing - with automated quotations an dorder receipt - with no enquiry left unattended.
                   </div>
-                  <div className="flex flex-row gap-2 pb-4 text-xs lg:pe-8">
+                  <div className="flex flex-row gap-2 pb-4 text-xs text-default-600 lg:pe-8">
                     <div>
                     <RiCheckboxCircleFill color="#3AD394" size={30} />
                     </div>
                     ZoTok allows 24X7 order processing - with automated quotations an dorder receipt - with no enquiry left unattended.</div>
-                  </div>
-                <div className="flex flex-row gap-4">
-                  <div className="flex flex-row gap-2 pb-4 w-1/2 text-xs lg:pe-8">
+                  <div className="flex flex-row gap-2 pb-4 text-xs text-default-600 lg:pe-8">
                     <div><RiCheckboxCircleFill color="#3AD394" size={30} /></div>
                      ZoTok allows 24X7 order processing - with automated quotations an dorder receipt - with no enquiry left unattended.</div>
-                </div>
+                  </div>
                 <div className="w-full flex justify-end">
                 <Button radius="full" className="bg-gradient-to-tr from-[#8546DB] to-orange-500 text-white font-semibold shadow-lg">
                 <IoCall /> Let's Talk Business</Button></div>
               </CardFooter>
           </Card>
                 </ModalBody>
-                <ModalFooter>
+                {/* <ModalFooter>
                   <Button color="danger" variant="light" onPress={onClose}>
                     Close
                   </Button>
                   <Button color="primary" onPress={onClose}>
                     Action
                   </Button>
-                </ModalFooter>
+                </ModalFooter> */}
               </>
             )}
           </ModalContent>

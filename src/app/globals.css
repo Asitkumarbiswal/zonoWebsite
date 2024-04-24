@@ -11,7 +11,7 @@
   }
   @font-face {
     font-family: 'hoves';
-    font-style: medium;
+    font-style: semibold;
     font-weight: 500;
     font-display: swap;
     src: url(/fonts/TTHovesMedium.otf) format('opentype');
@@ -33,5 +33,31 @@
 #m_nav_sc header{ padding: 0 10px; margin: 0;}
 #m_nav_sc header button {width: 30px; outline: none;}
 
-.slick-dots li {margin: 0 1px!important;}
-.slick-dots li button::before {font-size: 12px!important;}
+.mainbanner_slider .slick-slider .slick-dots {
+	bottom: 20px;
+}
+.mainbanner_slider .slick-dots li {
+	margin: 0 3px !important;
+	box-shadow: 2px 2px 6px #000;
+	border-radius: 20px;
+	background: #fff;width: 14px;
+  height: 14px;
+}
+.mainbanner_slider .slick-dots li button::before {font-size: 10px!important;width: 14px;
+  height: 14px;line-height: 14px;}
+
+  .mainbanner_slider .slick-prev {
+    left: 5px;
+     z-index: 99;
+    width: 30px;
+    height: 30px;
+  }
+  .mainbanner_slider .slick-next {
+    right: 5px; z-index: 99;
+    width: 30px;
+    height: 30px;
+  }
+  .mainbanner_slider .slick-prev::before, .mainbanner_slider .slick-next::before {
+    font-size: 32px;
+  }
+  .industry_stories .slick-slide { width: auto!important;}

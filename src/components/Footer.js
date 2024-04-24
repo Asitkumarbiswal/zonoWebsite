@@ -19,7 +19,7 @@ export default function Footer(){
            <div className="pb-4 md:pb-0">
             <h2 className="text-xl pb-1">Solutions</h2>
             <ul>
-            <li><a href="/" className="text-sm">Distributor</a></li>
+            <li><a href="/distributors" className="text-sm">Distributor</a></li>
             <li><a href="/" className="text-sm">Brand</a></li>
             <li><a href="/" className="text-sm">Retailer</a></li>
             <li><a href="/" className="text-sm">Advertiser</a></li>

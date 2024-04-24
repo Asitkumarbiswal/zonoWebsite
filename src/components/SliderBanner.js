@@ -10,14 +10,14 @@ const SliderBanner = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false
+    
   };
 
   return (
-    <Slider {...settings}>
+    <Slider className=' w-[96%] mx-auto md:mx-0 md:w-[99%]' {...settings}>
       <div>
         <img src="/Home/banner_01.png" alt="Banner 1" />
       </div>
